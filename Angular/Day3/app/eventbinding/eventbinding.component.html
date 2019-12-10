@@ -1,0 +1,24 @@
+<p>
+  eventbinding works!
+</p>
+
+<button (click)="onClick()" >Event Binding </button> <hr>
+
+<button (click)="onClickMe()" > Click Me </button>
+{{name}} <hr>
+
+<button (click)="onShowMe()"> Show Me </button>
+<div [hidden]="ishidden">
+  {{name1}}
+</div>
+
+<hr>
+<button (click)="onCount()"> Click On Button </button>
+<hr>
+
+<button (click)="onEventInfo($event)" value="Data is Set!!!"> Event Information </button> <hr>
+
+<button (click)="OnShowINfo()"> Show Info </button>
+{{name2}} <hr>
+<button (click)="OnPropertyBind()"> Use Property Binding </button>
+<input type="text" placeholder="eNTER THE Name" [value]="myname">

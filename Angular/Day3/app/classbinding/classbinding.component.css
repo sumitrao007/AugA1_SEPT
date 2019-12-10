@@ -1,0 +1,23 @@
+.success{
+    color: green;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.danger{
+    color: red;
+}
+.warning{
+    color: yellow;
+}
+
+.special{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.on{
+    color: blue;
+}
+.off{
+    color: black;
+}

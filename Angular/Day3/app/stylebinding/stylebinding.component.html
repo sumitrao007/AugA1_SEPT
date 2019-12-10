@@ -1,0 +1,15 @@
+<p>
+  stylebinding works!
+</p>
+
+<h1 style="color: red;">Style Binding</h1>
+<hr>
+<h1 [style.color]="mycolor"> Apply Style Binding </h1>
+
+<h1 [style.color]="rating<4?'red':'green'"> Change Color on Condition </h1>
+
+<h1 [style.color]="rating1<4?mycolor1:mycolor2"> Change Color on Condition Dynamic </h1>
+
+<h1 [ngStyle]="myobj">Apply NgStyle Directive</h1>
+
+<h1 [style.color]="rating>0 && rating<4?mycolor1:rating>-3 && rating<5?'green':'black'"> Change Color on Condition Dynamic </h1>

@@ -1,0 +1,14 @@
+<p>
+  classbinding works!
+</p>
+
+<h1 class="success">Normal Html class binding </h1>
+<hr>
+<h1 [class]="mysucess"> Class Binding</h1>
+
+<h1 [class]="iserror?mywarning:mysucess">Class Binding Using Condition</h1>
+
+<div [class.on]="rating<4" [class.off]="rating>4"> Apply Class Binding Using Condition </div>
+
+<h1 [ngClass]="myobj"> Apply ngClass Directive </h1>
+
