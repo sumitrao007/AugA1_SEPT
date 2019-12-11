@@ -1,0 +1,38 @@
+<p>
+  eventbinding2 works!
+</p>
+
+<input type="text" (change)="onChange()"
+placeholder="Enter the Name....." > 
+<hr>
+<input type="text" (change)="onChange1()" placeholder="Enter the Name" [style.background]="backcolor">
+<hr>
+<input type="text" (keyup)="onkeyup()" placeholder="Enter the USer Name">
+<hr>
+<input type="text" (keydown)="onkeyDown()" placeholder="Enter the USer Name">
+<hr><hr>
+<!-- template Refernce Variable -->
+
+<input #myinput type="text" placeholder="Use of template Refernce Variable..."  >
+<button (click)="onClick(myinput.value)"> Access Value </button>
+<hr>
+
+<input #myinput1 type="text" placeholder="Use of template Refernce Variable..."  >
+<button (click)="onClick1(myinput1)"> Access Value1 </button>
+
+<hr>
+
+<label for="">Number 1</label>&nbsp;
+<input type="number" placeholder="Enter the Number 1" #num1 > <br><br>
+<label for=""> Number 2 </label>&nbsp;
+<input type="number" placeholder="Enter the Number 2 " #num2>
+<br><br>
+<button (click)="onAddition(num1.value,num2.value)">Addition </button><br><br>
+<input type="text" placeholder="Result is ...." [value]="result" >
+<hr>
+
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
