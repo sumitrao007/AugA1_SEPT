@@ -1,0 +1,75 @@
+<p>
+  fordirective works!
+</p>
+<!-- <ul>
+  <li>Angular 2+</li>
+  <li>React Js</li>
+  <li>Vue Js</li>
+</ul>
+<hr> -->
+
+<!-- <ul>
+  <li *ngFor="let item of course"> {{item}} </li>
+</ul> -->
+<!-- <hr>
+<ul>
+  <li *ngFor="let item of course; index as i"> {{i}} &nbsp; {{item}} </li>
+</ul>
+<hr>
+<ol>
+  <li *ngFor="let item of course; first as f "> {{item}} {{f}}  </li>
+</ol>
+<hr>
+<ol>
+  <li *ngFor="let item of course; last as l "> {{item}} {{l}}  </li>
+</ol> -->
+<hr>
+<!-- <ol>
+  <li *ngFor="let item of course; even as e "> {{item}} {{e}}  </li>
+</ol>
+<hr>
+<ol>
+  <li *ngFor="let item of course; odd as o "> {{item}} {{o}}  </li>
+</ol>
+<hr>
+<ol>
+  <li *ngFor="let item of course; odd as o "> 
+    <div *ngIf="o==true">
+      {{item}}
+    </div>  
+  </li>
+</ol>
+<hr>
+<ul>
+  <li *ngFor="let item of course; index as i">
+
+    <div *ngIf="i<=2">  
+      {{item}}
+    </div>
+  </li>
+</ul> -->
+
+<table>
+  <thead>
+    <th>#</th>
+    <th> Product Name </th>
+    <th> Quantity </th>
+    <th>Weight</th>
+    <th> Price </th>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of product;index as i">
+      <td> {{i+1}} </td>
+      <td> {{item.prod_name}} </td>
+      <td> {{item.qutantity}} </td>
+      <td> {{item.weight}} </td>
+      <td> {{item.price}} </td>
+    </tr>    
+
+  </tbody>
+
+</table>
+
+
+

@@ -1,0 +1,31 @@
+<p>
+  ifdirective works!
+</p>
+
+<div *ngIf="rating<4"> rating is {{rating}}
+</div>
+<hr>
+
+<div *ngIf="rating1<4; else elsepart1"> U r in If part rating is 
+  {{rating1}}
+
+</div>
+<!-- <div #elsepart> U R in Else Part {{rating1}}
+</div> -->
+
+<ng-template #elsepart1>
+    U R in Else Part {{rating1}}
+  <input type="text">
+</ng-template>
+<hr>
+
+<div *ngIf="rating2<4; then ifpart else elsepart2">
+</div>
+
+<ng-template #ifpart>
+  U r If Part Condition is True {{rating2}}
+</ng-template>
+<ng-template #elsepart2>
+ U r elsepart Condition is false {{rating2}}
+</ng-template>
+

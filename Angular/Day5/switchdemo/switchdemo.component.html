@@ -1,0 +1,50 @@
+<p>
+  switchdemo works!
+</p>
+
+<!-- <div [ngSwitch]="mycolor">
+  <div *ngSwitchCase="'red'"> Your choice is {{mycolor}} </div>
+  <div *ngSwitchCase="'green'">Your choice is {{mycolor}}</div>
+  <div *ngSwitchCase="'black'">Your choice is {{mycolor}}</div>
+  <div *ngSwitchDefault>U r in default case {{mycolor}} </div>
+</div>
+<hr>
+<input type="text" placeholder="Please Enter the Color Name"
+ [(ngModel)]="mycolor1"> <br>
+ <button (click)="onClick()"> Click </button>
+ 
+ <div [hidden]="ishidden">
+  <div [ngSwitch]="mycolor1">
+    <div *ngSwitchCase="'red'" [style.background]="mycolor1" >U r Choice is  <strong> {{mycolor1}} </strong></div>
+    <div *ngSwitchCase="'green'" [style.background]="mycolor1">U r Choice is <strong> {{mycolor1}}
+      </strong>
+    </div>
+    <div *ngSwitchCase="'black'" [style.background]="mycolor1">U r Choice is <strong> {{mycolor1}}
+      </strong>
+    </div>
+    <div *ngSwitchDefault [style.background]="mycolor1">U r in Default Case Wrong choice
+      <strong>{{mycolor1}} </strong> </div>
+  </div>
+ </div> -->
+
+ <hr>
+ <input type="text" placeholder="Please Enter the Color Name"
+  [(ngModel)]="mycolor1"> <br>
+  
+ 
+   <div [ngSwitch]="mycolor1">
+     <div *ngSwitchCase="'red'" [style.background]="mycolor1" >U r Choice is  <strong> {{mycolor1}} </strong></div>
+     <div *ngSwitchCase="'green'" [style.background]="mycolor1">U r Choice is <strong> {{mycolor1}}
+       </strong>
+     </div>
+     <div *ngSwitchCase="'black'" [style.background]="mycolor1">U r Choice is <strong> {{mycolor1}}
+       </strong>
+     </div>    
+     <div *ngSwitchDefault [style.background]="'blue'">U r in Default Case Wrong choice
+       <strong>{{mycolor1}} </strong> </div>
+   </div>
+ 
+
+
+
+
