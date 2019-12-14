@@ -1,0 +1,19 @@
+<!-- <app-child1 (childEventstr)="companyName=$event"></app-child1> -->
+
+<!-- <h3>{{companyName}}</h3> -->
+<!-- 
+<app-child1 (childEventObj)="objDetails=$event"></app-child1>
+
+
+<ul>
+  <li>{{objDetails.myName1}}</li>
+  <li>{{objDetails.myName2}}</li>
+</ul> -->
+
+<app-child1 (childEventArrObj)="arrobjDetails=$event"></app-child1>
+
+<ul *ngFor="let item of arrobjDetails">
+  <li>{{item.id}}</li>
+  <li>{{item.name}}</li>
+</ul>
+

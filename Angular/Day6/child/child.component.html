@@ -1,0 +1,23 @@
+<h2>{{parentToChild}}</h2>
+
+<ul>
+  <li>{{parentToChildObj.fName}}</li>
+  <li>{{parentToChildObj.lName}}</li>
+</ul>
+
+<table border="1">
+<thead>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Jersey No</th>
+<th>DOB</th>
+</thead>
+<tbody>
+<tr *ngFor="let players of parentToChildArrObj">
+  <td>{{players.fName}}</td>
+  <td>{{players.lName}}</td>
+  <td>{{players.JRNumber}}</td>
+  <td>{{players.DOB}}</td>
+</tr>
+</tbody>
+</table>
