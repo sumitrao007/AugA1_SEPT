@@ -1,0 +1,25 @@
+<p>
+  course works!
+</p>
+
+<ul>
+  <li *ngFor="let item of arrcourse"> {{item}} </li>
+</ul>
+<br><br>
+
+<table border="1">
+ <thead>
+  <th>#</th>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Full Name</th>
+ </thead>
+<tbody>
+  <tr *ngFor="let item of myarrobj;index as i" (mouseover)="onMouseHover(item)" [ngClass]="{ 'highlight':item.fname==selected}" (mouseout)="onMouseout()">
+    <td> {{i+1}} </td>
+    <td> {{item.fname}} </td>
+    <td> {{item.lname}} </td>
+    <td> {{item.fullname(item.fname,item.lname)}} </td>
+  </tr>
+</tbody>
+</table>
