@@ -1,0 +1,52 @@
+What is HTP?
+HTTP stands for Hyper Text Transfer Protocol
+WWW is about communication between web clients and servers
+Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP Responses
+
+
+
+
+
+Consume HTTP Services 
+- We use https://jsonplaceholder.typicode.co
+m/posts
+- It is fake service/API for demo Purpose
+- we can create,delete,upadte and get the data (i.e. Curd Opeartion) but it can't store in database when you refresh the page.
+- install http service
+npm install @angular/http@latest
+- http.get()
+
+It Returns (return type ) Observable<Response>
+what is obervable?
+It is asynchronous non blocking operations, now here we go to network we call the server but it not available immediately. Its going to some delay, may be 10msec, or half sec its depends on availability  of server so during this time as excuting the code to get block of data so we use obervable when the result is ready to notify for that. obsrvable we have to call method subscribe(). When result is ready will be notify.
+
+Http Request Method
+Method	 Description
+Get		Get Data
+Post	Create Data
+Put		Update Data
+Delete	Delete Data
+
+JSON.stringify().=>
+When sending data to a web server, the data has to be a string.
+Convert a JavaScript object into a string with JSON.stringify().
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

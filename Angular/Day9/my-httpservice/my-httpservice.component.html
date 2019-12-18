@@ -1,0 +1,42 @@
+<p>
+  my-httpservice works!
+</p>
+
+<label for="">Title:</label>&nbsp; 
+<input type="text" placeholder="Enter the Title..." #title> <br>
+<label for="">Body:</label>&nbsp; 
+<input type="text" placeholder="Enter the Body...." #body><br>
+<button (click)="onPost(title.value,body.value)"> Post Data </button>
+
+<hr>
+<div [hidden]="ishidden">
+<label for="">ID:</label> &nbsp;
+<input type="text" placeholder="Enter the ID.." [(ngModel)]="myid" readonly> <br>
+<label for="">Title:  </label> &nbsp;
+<input type="text" placeholder="Enter the Title.." [(ngModel)]="mytitle"><br>
+<label for="">Body: </label>&nbsp;
+<input type="text" placeholder="Enter the Body.." [(ngModel)]="mybody"> <br>
+<button (click)="UpdateData()"> Update Data</button>
+
+</div>
+
+<hr>
+
+<table>
+  <thead>
+    <th>Id</th>
+    <th>Action </th>
+    <th>Title</th>
+    <th>Body</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of post">
+      <td> {{item.id}} </td>
+      <td> <button (click)="OnUpdate(item)">Update</button>
+        <button (click)="OnDelete(item)">Delete</button>
+      </td>
+      <td> {{item.title}} </td>
+      <td> {{item.body}} </td>
+    </tr>
+  </tbody>
+</table>
