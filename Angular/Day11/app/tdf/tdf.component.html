@@ -1,0 +1,105 @@
+<p>
+  tdf works!
+</p>
+
+<div  class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <form action="" #f="ngForm">
+        {{f.value | json}}
+
+        <div class="form-group">
+          <label for="username1">Username:</label>
+          <input type="text" class="form-control"
+          placeholder="Enter the Username"
+          id="username1"
+          ngModel
+          name="username"
+          #username="ngModel"
+          required
+          minlength="5"
+          pattern="sumit"
+          >
+
+          <div *ngIf="username.touched && !username.valid" class="alert alert-danger"> Please Enter the User Name.....
+
+            <div *ngIf="username.errors.minlength"> Please Enter the Minimum Length... {{username.errors.minlength.requiredLength}}
+
+            </div>
+
+            <div *ngIf="username.errors.pattern"> Please Enter the Appropriate Pattern
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="comment1">Comment:</label>
+          
+          <textarea name="" id="comment1" cols="30" rows="10"
+           class="form-control"
+          ngModel 
+          name="comment"
+          #comment="ngModel"
+          required
+          > </textarea>
+
+          <div class="alert alert-danger" 
+          *ngIf="comment.touched && !comment.valid"
+          > Please Enter the Comment
+
+          </div>
+
+        </div>
+        <div class="checkbox">
+          <label for="">
+            <input type="checkbox" ngModel name="issubscribed"  #terms="ngModel" required> I Agree All the Terms & Conditions.
+          </label>        
+        </div>
+
+        <div class="radio">
+          <label for="con1">
+            <input ngModel #contact="ngModel" type="radio" 
+            id="con1"
+            name="con" value="email" required > Email
+          </label>
+        </div>
+      <div class="radio">
+          <label for="con2">
+            <input ngModel #contact="ngModel" type="radio" 
+            id="con2"
+            name="con" value="phone" required > Phone
+          </label> 
+        </div>
+
+        <div class="form-group">
+          <label for="contact">contact Method</label>
+          <select ngModel name="contact" id="contact" class="form-control" required>
+
+           <!-- <option *ngFor="let item of contactMethod" [value]="item.id">{{item.name}} </option> -->
+
+           <option *ngFor="let item of contactMethod" [ngValue]="item">{{item.name}} </option>
+
+          </select>
+        </div>
+
+
+        <button class="btn btn-success" [disabled]="!f.valid">Submit</button>
+
+<br><br><br><br><br><br><br><br>
+
+      </form>
+
+
+
+
+
+
+     <!-- end the structure  -->
+    </div>
+  </div>
+</div>
